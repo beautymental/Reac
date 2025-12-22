@@ -1,0 +1,2 @@
+.keyboard{ display:grid; gap: 10px; }
+.row{ display:flex; gap: 8px; flex-wrap: wrap; }

@@ -1,0 +1,11 @@
+.stack{ display: grid; gap: 14px; }
+.actions{ display:flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+.hint{
+  margin-top: 12px;
+  color: rgba(255,255,255,.66);
+  font-size: 13px;
+  border: 1px dashed rgba(255,255,255,.18);
+  border-radius: 16px;
+  padding: 12px;
+  background: rgba(0,0,0,.15);
+}

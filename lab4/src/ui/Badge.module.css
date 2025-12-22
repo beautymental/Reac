@@ -1,0 +1,14 @@
+.badge{
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+}
+.tone_success{ background: rgba(70,220,140,.15); border-color: rgba(70,220,140,.28); }
+.tone_danger{ background: rgba(255,90,90,.15); border-color: rgba(255,90,90,.28); }
+.tone_info{ background: rgba(80,160,255,.15); border-color: rgba(80,160,255,.28); }
+.tone_warning{ background: rgba(255,200,80,.14); border-color: rgba(255,200,80,.26); }
+.tone_neutral{ background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); }

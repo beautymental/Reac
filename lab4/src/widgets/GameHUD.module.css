@@ -1,0 +1,12 @@
+.hud{ display:flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.item{
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.04);
+  border-radius: 16px;
+  padding: 10px 12px;
+  display:grid;
+  gap: 4px;
+  min-width: 160px;
+}
+.label{ font-size: 11px; color: rgba(255,255,255,.66); }
+.value{ font-weight: 800; }
