@@ -14,6 +14,6 @@ export function saveState(state) {
   try {
     localStorage.setItem(KEY, JSON.stringify(state));
   } catch {
-    // ignore
+    
   }
 }
