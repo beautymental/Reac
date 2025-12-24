@@ -22,6 +22,5 @@ export const store = configureStore({
 });
 
 store.subscribe(() => {
-  // Зберігаємо весь store (простий варіант для лаби)
   saveState(store.getState());
 });
