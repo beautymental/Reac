@@ -34,7 +34,6 @@ export default function SettingsForm() {
     defaultValues: settings,
   });
 
-  // якщо settings оновились ззовні — синхронізуємо форму
   useEffect(() => {
     reset(settings);
   }, [settings, reset]);
