@@ -4,12 +4,12 @@ const STORAGE_KEY = "hangman.settings.v1";
 
 const DEFAULTS = {
   playerName: "",
-  difficulty: "normal", // easy | normal | hard
-  // Налаштування гри (Lab 3):
-  maxAttempts: 7,        // "кількість елементів" / спроб
-  timeLimitSec: 0,       // 0 = без таймера
-  tickMs: 1000,          // швидкість "тику" таймера
-  wordLengthMin: 3,      // фільтр довжини слова
+  difficulty: "normal", 
+
+  maxAttempts: 7,        
+  timeLimitSec: 0,       
+  tickMs: 1000,         
+  wordLengthMin: 3,      
   wordLengthMax: 14
 };
 
