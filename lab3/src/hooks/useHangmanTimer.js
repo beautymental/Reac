@@ -1,10 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
-/**
- * Таймер раунду:
- * - timeLimitSec = 0 => вимкнено
- * - tickMs => частота оновлення
- */
+
 export default function useHangmanTimer({ isRunning, timeLimitSec, tickMs }) {
   const enabled = (timeLimitSec ?? 0) > 0;
   const [elapsedMs, setElapsedMs] = useState(0);
@@ -14,16 +10,16 @@ export default function useHangmanTimer({ isRunning, timeLimitSec, tickMs }) {
     if (!enabled) return;
 
     if (isRunning) {
-      // старт або продовження
+    
       if (startRef.current === null) startRef.current = Date.now() - elapsedMs;
     } else {
-      // пауза
+
       if (startRef.current !== null) {
         setElapsedMs(Date.now() - startRef.current);
         startRef.current = null;
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [isRunning, enabled]);
 
   useEffect(() => {
