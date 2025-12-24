@@ -3,10 +3,7 @@ import { useSettings } from "../state/SettingsContext.jsx";
 import useHangmanGame from "./useHangmanGame.js";
 import useWordBank from "./useWordBank.js";
 
-/**
- * Контролер застосунку (без роутингу) + керування модалкою завершення гри (portal).
- * Компоненти лишаються максимально чистими.
- */
+
 export default function useHangmanApp() {
   const { settings } = useSettings();
   const words = useWordBank();
@@ -26,7 +23,7 @@ export default function useHangmanApp() {
     wordLengthMax: settings.wordLengthMax,
   });
 
-  // Коли гра завершилась — відкриваємо модалку через портал
+
   useEffect(() => {
     if (view !== "game") return;
     if (game.status === "win" || game.status === "lose") {
@@ -67,7 +64,6 @@ export default function useHangmanApp() {
     setModal((m) => ({ ...m, isOpen: false }));
   }, []);
 
-  // Дії з модалки:
   const nextRound = useCallback(() => {
     game.resetNewWord();
     setModal({ isOpen: false, status: null, summary: null });
