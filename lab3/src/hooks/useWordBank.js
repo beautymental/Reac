@@ -1,8 +1,6 @@
 import { useMemo } from "react";
 
-/**
- * Словник. Для Lab 3 ми також підтримуємо фільтр по довжині слова в useHangmanGame.
- */
+
 export default function useWordBank() {
   return useMemo(
     () => ({
