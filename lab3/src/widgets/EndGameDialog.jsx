@@ -39,7 +39,7 @@ export default function EndGameDialog({ modal, actions }) {
         </div>
       </div>
       <div className="hint" style={{ marginTop: 12 }}>
-        Це вікно створене через <strong>React Portal</strong> (рендер у #modal-root).
+       <strong>React Portal</strong> 
       </div>
     </Modal>
   );
