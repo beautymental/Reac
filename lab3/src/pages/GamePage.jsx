@@ -52,7 +52,7 @@ export default function GamePage({ settings, game, onGuess, onGiveUp, modal, mod
         </div>
       </Card>
 
-      {/* Portal modal про завершення гри */}
+      {}
       <EndGameDialog modal={modal} actions={modalActions} />
     </div>
   );
