@@ -8,7 +8,7 @@ export default function useHangmanApp() {
   const { settings } = useSettings();
   const words = useWordBank();
 
-  const [view, setView] = useState("start"); // start | game | result
+  const [view, setView] = useState("start"); 
   const [result, setResult] = useState(null);
 
   const [modal, setModal] = useState({ isOpen: false, status: null, summary: null });
